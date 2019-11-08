@@ -249,7 +249,7 @@ Finally, run the singularity image binding the appropriate folder:
 ::
 
   $ export SINGULARITYENV_TEMPLATEFLOW_HOME=/templateflow
-  $ singularity run -B ${TEMPLATEFLOW_HOME:-$HOME/.cache/templateflow}:/templateflow \
+  $ singularity run -B ${SINGULARITYENV_TEMPLATEFLOW_HOME:-$HOME/.cache/templateflow}:/templateflow \
         --cleanenv fmriprep.simg <fmriprep arguments>
 
 
